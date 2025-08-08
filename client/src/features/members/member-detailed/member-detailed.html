@@ -20,7 +20,9 @@
                 <li>
                     <a routerLink="profile" routerLinkActive="text-primary">Profile</a>
                     <a routerLink="photos" routerLinkActive="text-primary">Photos</a>
-                    <a routerLink="messages" routerLinkActive="text-primary">Messages</a>
+                    @if (!isCurrentUser()) {
+                        <a routerLink="messages" routerLinkActive="text-primary">Messages</a>
+                    }
                 </li>
             </ul>
         </div>

@@ -56,7 +56,7 @@ export class AccountService {
           this.logout()
         }
       })
-    }, 5 * 60 * 1000);
+    }, 14 * 24 * 60 * 60 * 1000); // 14 days - just for using this with a free sql server (fewer requests)
   }
 
   setCurrentUser(user: User) {
